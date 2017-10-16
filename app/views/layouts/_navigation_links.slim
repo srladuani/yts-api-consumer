@@ -1,0 +1,6 @@
+.navbar-nav-scroll
+  ul.navbar-nav.bd-navbar-nav.flex-row
+    li.nav-item
+      = link_to 'Home', root_path, class: 'nav-link'
+ul.navbar-nav.flex-row.ml-md-auto.d-none.d-md-flex
+= link_to 'Sign out', destroy_user_session_path, :method=>'delete', class: 'btn btn-bd-yellow d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3'

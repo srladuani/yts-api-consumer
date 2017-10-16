@@ -30,6 +30,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'slim-rails'
 gem 'therubyracer', :platform=>:ruby
+gem 'figaro'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
@@ -48,3 +49,4 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
 end
+gem 'rails_script', '~> 2.0'

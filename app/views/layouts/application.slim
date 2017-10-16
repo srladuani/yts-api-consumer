@@ -9,8 +9,10 @@ html
     == javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
     == csrf_meta_tags
   body
-    header
-      == render 'layouts/navigation'
+    header.navbar.navbar-expand.navbar-dark.flex-column.flex-md-row.bd-navbar
+      = render "layouts/navigation"
+
     main[role="main"]
       == render 'layouts/messages'
       == yield
+    = include_rails_script
